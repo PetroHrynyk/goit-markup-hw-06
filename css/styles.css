@@ -348,6 +348,10 @@ outline: none;
 	display: flex;
 	align-items:center;
 }
+.checkbox a{
+	display: inline-block;
+	margin-left: .2em;
+}
 
 .checkbox-input {
 	/* display: none; */
@@ -363,7 +367,8 @@ outline: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-margin-right: 8px;}
+margin-right: 8px;
+transition: background-color var(--animation), border var(--animation);}
 
 .checkbox-input:checked + .check-square{
 	background-color: #2196f3;
