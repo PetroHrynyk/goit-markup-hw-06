@@ -248,7 +248,7 @@ ol {
 	letter-spacing: 0.03em;
 	
 	color: var(--primary-text-color);
-	padding-bottom: 12px;
+	margin-bottom: 12px;
 }
 /* ------------------------------------------------------------FORM----------------------------------------------- */
 .modal-form {}
@@ -348,10 +348,7 @@ outline: none;
 	display: flex;
 	align-items:center;
 }
-.checkbox a{
-	display: inline-block;
-	margin-left: .2em;
-}
+
 
 .checkbox-input {
 	/* display: none; */
@@ -374,9 +371,13 @@ transition: background-color var(--animation), border var(--animation);}
 	background-color: #2196f3;
 	border: none;
 }
+.checkbox-input:focus +.check-square{
+	border-color: var(--accent-color);
+}
 
-
-.checkbox-link {}
+.checkbox-link {
+	color: var(--accent-color);
+}
 
 .submit-btn {
 	display: inline-block;
